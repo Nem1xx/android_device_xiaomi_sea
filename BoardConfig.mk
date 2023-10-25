@@ -65,7 +65,8 @@ BOARD_RAMDISK_USE_LZ4 := true
 
 BOARD_KERNEL_CMDLINE := \
     bootopt=64S3,32N2,64N2 \
-    cgroup.memory=nokmem
+    cgroup.memory=nokmem \
+    sysctl.kernel.sched_pelt_multiplier=4
 
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := sea
