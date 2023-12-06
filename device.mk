@@ -67,6 +67,10 @@ PRODUCT_BUILD_SUPER_PARTITION := false
 # Kernel
 PRODUCT_ENABLE_UFFD_GC := true
 
+# Linker config
+PRODUCT_VENDOR_LINKER_CONFIG_FRAGMENTS += \
+    $(DEVICE_PATH)/configs/linker.config.json
+
 # Sku properties
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/sku/,$(TARGET_COPY_OUT_ODM)/etc)
