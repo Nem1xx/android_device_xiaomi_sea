@@ -65,6 +65,10 @@ blob_fixups: blob_fixups_user_type = {
 
     'vendor/lib64/libmnl.so': blob_fixup()
         .add_needed('libcutils.so'),
+
+    'vendor/bin/hw/mtkfusionrild': blob_fixup()
+        .add_needed('libutils-v32.so'),
+    
     (
         'vendor/lib/libteei_daemon_vfs.so',
         'vendor/lib64/libteei_daemon_vfs.so',
@@ -88,6 +92,7 @@ blob_fixups: blob_fixups_user_type = {
         .clear_symbol_version('AHardwareBuffer_lock')
         .clear_symbol_version('AHardwareBuffer_release')
         .clear_symbol_version('AHardwareBuffer_unlock'),
+    
 
 }
 
