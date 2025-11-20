@@ -333,6 +333,7 @@ PRODUCT_SOONG_NAMESPACES += \
     $(DEVICE_PATH) \
     hardware/mediatek \
     hardware/mediatek/libmtkperf_client \
+    hardware/mediatek/libaedv \
     hardware/xiaomi \
     hardware/google/pixel \
     hardware/google/interfaces
