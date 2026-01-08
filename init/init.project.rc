@@ -79,7 +79,6 @@ on boot
     chown system system /dev/goodix_fp
 
     # DT2W
-    chmod 0660 /proc/tp_gesture
-    chown system system /proc/tp_gesture
+    chown system system /sys/touchpanel/double_tap
 
     stop console
